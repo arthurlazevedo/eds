@@ -70,5 +70,9 @@ int main(void)
     assert(pog.items[1] == 4);
     assert(da_last(&pog) == -1);
 
+    da_foreach(poggers, &pog) {
+        printf("%d\n", *poggers);
+    }
+
     return 0;
 }
